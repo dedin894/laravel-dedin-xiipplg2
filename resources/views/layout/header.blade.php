@@ -38,6 +38,7 @@
                         <li class="nav-item">
                             <a class="nav-link {{ request()->is('projek*') ? 'active' : '' }}" href="{{ url('/projek') }}">Projects</a>
                         </li>
+                       
                     </ul>
                 </div>
             </div>

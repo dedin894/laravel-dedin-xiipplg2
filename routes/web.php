@@ -1,8 +1,8 @@
 
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $artikel = DB::table('artikel')->get();
@@ -23,3 +23,11 @@ Route::get('/biodata', function () {
 Route::get('/projek', function () {
     return view('projek');
 })->name('projek');
+
+Route::get('/admin', function () {
+    return view('admin.index');
+})->name('admin.index');
+
+Route::get('/admin/index', function () {
+    return redirect()->route('admin.index');
+});

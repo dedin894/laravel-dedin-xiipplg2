@@ -3,6 +3,10 @@
 
 @section('container')
     <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold mb-0">Daftar Artikel</h3>
+            <a href="{{ route('admin.index') }}" class="btn btn-primary">Admin</a>
+        </div>
         <div class="row">
             <!-- bagian artikel -->
             <div class="col-md-8 col-12">
